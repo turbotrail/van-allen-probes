@@ -1,0 +1,22 @@
+Metric,Test,Statistic,P-Value,Significance
+RMS,Kruskal-Wallis,8.635023440989244,0.034558425675557856,True
+RMS,Cliff Delta (Main vs Quiet),0.10650670370041816,0.007575239525130681,True
+Hurst,Kruskal-Wallis,242.71620143172186,2.4610155094385174e-52,True
+Hurst,Cliff Delta (Main vs Quiet),0.5440137775344209,2.3095562120692745e-42,True
+Spectral_Slope,Kruskal-Wallis,223.42734612498498,3.6459218917278817e-48,True
+Spectral_Slope,Cliff Delta (Main vs Quiet),-0.46344395535148925,3.259904881476249e-31,True
+Intermittency,Kruskal-Wallis,69.28277872139915,6.078921042447239e-15,True
+Intermittency,Cliff Delta (Main vs Quiet),-0.2638043002792826,3.7303621862438966e-11,True
+Shannon_Entropy,Kruskal-Wallis,38.0450261245951,2.7651099970150763e-08,True
+Shannon_Entropy,Cliff Delta (Main vs Quiet),-0.23862909861765813,2.1881687277417968e-09,True
+Scale_Flatness,Kruskal-Wallis,57.25013387962463,2.2725642152308154e-12,True
+Scale_Flatness,Cliff Delta (Main vs Quiet),0.2474541844978266,5.488555092807571e-10,True
+Higuchi_FD,Kruskal-Wallis,45.6894037029997,6.602845762982064e-10,True
+Higuchi_FD,Cliff Delta (Main vs Quiet),-0.2568237644115029,1.199586097498463e-10,True
+RMS,Spearman Correlation vs L,-0.884278499533276,0.0,True
+Hurst,Spearman Correlation vs L,-0.25610333790617057,3.6904404391157587e-57,True
+Spectral_Slope,Spearman Correlation vs L,0.16878722558475667,2.4683045140176426e-25,True
+Intermittency,Spearman Correlation vs L,0.523480714850762,1.2679077732341752e-262,True
+Shannon_Entropy,Spearman Correlation vs L,0.4989268609783452,5.688044329432617e-235,True
+Scale_Flatness,Spearman Correlation vs L,0.28763149854338715,2.9309886743780875e-72,True
+Higuchi_FD,Spearman Correlation vs L,0.5783055507287835,0.0,True

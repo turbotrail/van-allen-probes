@@ -1,0 +1,105 @@
+=== Scientific Validation: Non-Parametric Statistical Tests ===
+
+1. Turbulence Modulation by Geomagnetic Storm Phase
+-------------------------------------------------------
+
+--- RMS ---
+Kruskal-Wallis: H = 8.64, p = 3.46e-02
+-> Significant differences exist between storm phases for RMS.
+Dunn's Post-Hoc Test Results (p-values):
+                Main Phase     Onset     Quiet  Recovery Phase
+Main Phase        1.000000  0.226955  0.038887        0.129652
+Onset             0.226955  1.000000  0.829519        0.829519
+Quiet             0.038887  0.829519  1.000000        0.829519
+Recovery Phase    0.129652  0.829519  0.829519        1.000000
+Mann-Whitney U (Main vs Quiet): U = 292091.00, p = 7.58e-03
+Cliff's Delta (Main vs Quiet): 0.107
+
+--- Hurst ---
+Kruskal-Wallis: H = 242.72, p = 2.46e-52
+-> Significant differences exist between storm phases for Hurst.
+Dunn's Post-Hoc Test Results (p-values):
+                  Main Phase         Onset         Quiet  Recovery Phase
+Main Phase      1.000000e+00  2.499129e-10  1.071559e-43    2.087614e-14
+Onset           2.499129e-10  1.000000e+00  6.548204e-02    5.934454e-04
+Quiet           1.071559e-43  6.548204e-02  1.000000e+00    1.152042e-14
+Recovery Phase  2.087614e-14  5.934454e-04  1.152042e-14    1.000000e+00
+Mann-Whitney U (Main vs Quiet): U = 149066.00, p = 2.31e-42
+Cliff's Delta (Main vs Quiet): 0.544
+
+--- Spectral_Slope ---
+Kruskal-Wallis: H = 223.43, p = 3.65e-48
+-> Significant differences exist between storm phases for Spectral_Slope.
+Dunn's Post-Hoc Test Results (p-values):
+                  Main Phase         Onset         Quiet  Recovery Phase
+Main Phase      1.000000e+00  8.691008e-10  3.020983e-31    7.212456e-06
+Onset           8.691008e-10  1.000000e+00  1.319736e-02    7.212456e-06
+Quiet           3.020983e-31  1.319736e-02  1.000000e+00    1.683943e-22
+Recovery Phase  7.212456e-06  7.212456e-06  1.683943e-22    1.000000e+00
+Mann-Whitney U (Main vs Quiet): U = 478413.00, p = 3.26e-31
+Cliff's Delta (Main vs Quiet): -0.463
+
+--- Intermittency ---
+Kruskal-Wallis: H = 69.28, p = 6.08e-15
+-> Significant differences exist between storm phases for Intermittency.
+Dunn's Post-Hoc Test Results (p-values):
+                  Main Phase     Onset         Quiet  Recovery Phase
+Main Phase      1.000000e+00  0.451382  1.296634e-10    2.915998e-02
+Onset           4.513817e-01  1.000000  7.607545e-01    7.607545e-01
+Quiet           1.296634e-10  0.760755  1.000000e+00    8.793426e-08
+Recovery Phase  2.915998e-02  0.760755  8.793426e-08    1.000000e+00
+Mann-Whitney U (Main vs Quiet): U = 413149.00, p = 3.73e-11
+Cliff's Delta (Main vs Quiet): -0.264
+
+--- Shannon_Entropy ---
+Kruskal-Wallis: H = 38.05, p = 2.77e-08
+-> Significant differences exist between storm phases for Shannon_Entropy.
+Dunn's Post-Hoc Test Results (p-values):
+                  Main Phase     Onset         Quiet  Recovery Phase
+Main Phase      1.000000e+00  0.049946  1.454670e-08        0.000208
+Onset           4.994568e-02  1.000000  6.750815e-01        0.675082
+Quiet           1.454670e-08  0.675082  1.000000e+00        0.120543
+Recovery Phase  2.075310e-04  0.675082  1.205435e-01        1.000000
+Mann-Whitney U (Main vs Quiet): U = 404919.00, p = 2.19e-09
+Cliff's Delta (Main vs Quiet): -0.239
+
+--- Scale_Flatness ---
+Kruskal-Wallis: H = 57.25, p = 2.27e-12
+-> Significant differences exist between storm phases for Scale_Flatness.
+Dunn's Post-Hoc Test Results (p-values):
+                  Main Phase     Onset         Quiet  Recovery Phase
+Main Phase      1.000000e+00  0.567105  2.867440e-09    8.733711e-13
+Onset           5.671051e-01  1.000000  2.142752e-01    5.778302e-02
+Quiet           2.867440e-09  0.214275  1.000000e+00    3.628156e-03
+Recovery Phase  8.733711e-13  0.057783  3.628156e-03    1.000000e+00
+Mann-Whitney U (Main vs Quiet): U = 246014.00, p = 5.49e-10
+Cliff's Delta (Main vs Quiet): 0.247
+
+--- Higuchi_FD ---
+Kruskal-Wallis: H = 45.69, p = 6.60e-10
+-> Significant differences exist between storm phases for Higuchi_FD.
+Dunn's Post-Hoc Test Results (p-values):
+                  Main Phase     Onset         Quiet  Recovery Phase
+Main Phase      1.000000e+00  0.872680  6.761289e-10        0.000003
+Onset           8.726800e-01  1.000000  1.310650e-01        0.210987
+Quiet           6.761289e-10  0.131065  1.000000e+00        0.412719
+Recovery Phase  3.195711e-06  0.210987  4.127194e-01        1.000000
+Mann-Whitney U (Main vs Quiet): U = 410867.00, p = 1.20e-10
+Cliff's Delta (Main vs Quiet): -0.257
+
+2. Radial Dependence (L-shell) of Turbulence
+-------------------------------------------------------
+RMS vs L-shell:
+  Spearman rho = -0.884, p = 0.00e+00
+Hurst vs L-shell:
+  Spearman rho = -0.256, p = 3.69e-57
+Spectral_Slope vs L-shell:
+  Spearman rho = 0.169, p = 2.47e-25
+Intermittency vs L-shell:
+  Spearman rho = 0.523, p = 1.27e-262
+Shannon_Entropy vs L-shell:
+  Spearman rho = 0.499, p = 5.69e-235
+Scale_Flatness vs L-shell:
+  Spearman rho = 0.288, p = 2.93e-72
+Higuchi_FD vs L-shell:
+  Spearman rho = 0.578, p = 0.00e+00
