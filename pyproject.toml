@@ -4,4 +4,17 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "antropy>=0.2.2",
+    "cdflib>=1.3.12",
+    "h5py>=3.16.0",
+    "matplotlib>=3.11.0",
+    "mfdfa>=0.4.3",
+    "numpy>=2.4.6",
+    "pandas>=3.0.3",
+    "pywavelets>=1.9.0",
+    "scikit-posthocs>=0.14.0",
+    "scipy>=1.18.0",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.14.6",
+]
